@@ -1,0 +1,14 @@
+# INVENTORY
+
+## `INVENTORY`[¶](https://docs.ceph.com/docs/nautilus/ceph-volume/zfs/inventory/#inventory)
+
+该`inventory`子命令通过GEOM查询主机的磁盘清单，并在每个物理设备上提供硬件信息和元数据。
+
+这仅在FreeBSD平台上有效。
+
+默认情况下，该命令返回所有物理磁盘的简短可读报告。
+
+为了以编程方式使用此报告，请传递以生成JSON格式的报告。该报告包含有关物理驱动器的大量信息，例如磁盘元数据（如型号和大小），逻辑卷以及ceph是否使用它们，以及ceph是否可以使用磁盘以及原因。`--format json`
+
+可以指定设备路径以纯格式和json格式报告有关设备的大量信息。
+
